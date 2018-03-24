@@ -11,12 +11,16 @@ namespace ConsoleApp1
 
         static void Msg() { }
 
-        static string Hello() { return "ciao"; }
+        static string Hello() { return "Hello"; }
 
      
         static void Test() { }
 
-        static void conta2() { }
+
+        static void conta21() { }
+
+        static void conta12() { }
+
      
     }
 }
