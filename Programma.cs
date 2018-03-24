@@ -16,7 +16,7 @@ namespace ConsoleApp1
      
         static void Test() { }
 
-        static void conta() { }
+        static void conta1() { }
      
     }
 }
