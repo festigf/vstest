@@ -8,17 +8,28 @@ namespace ConsoleApp1
 {
     class Line:Shape
     {
+        public Line(int x0, int y0, int x1, int y1, string id) : base(id)
+        {
+            this.X0 = x0;
+            this.Y0 = y0;
+            this.X1 = x1;
+            this.Y1 = y1;
+        }
+
         public int X1 { get; set; }
         public int Y1 { get; set; }
 
-        public new void Area()
+        public override double Area
         {
-            throw new Exception("Error: a line don't have area");
+            get { return 0; }
         }
 
-        public double Length()
+        public override double Length
         {
-            return Math.Sqrt(Math.Pow(X1 - X, 2) + Math.Pow(Y1 - Y, 2));
+            get
+            {
+                return Math.Sqrt(Math.Pow(X1 - X0, 2) + Math.Pow(Y1 - Y0, 2));
+            }
         }
         public override string ToString()
         {

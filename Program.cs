@@ -6,7 +6,8 @@ namespace ConsoleApp1
     class ClsForm : Form
     {
         Button btnLength,btnArea;
-        Line line = new Line();
+        Shape line = new Line(0, 0, 10, 0, "Linea");
+        Shape rect = new Rectagle(0, 0, 20, 30, "rect");
         public ClsForm()
         {
             btnLength = new Button
@@ -26,14 +27,16 @@ namespace ConsoleApp1
 
         private void BtnArea_Click(object sender, EventArgs e)
         {
-            line.Area();
+            //rect.X = 0; rect. = 10;
+            //rect.Y = 0; rect.Y1 = 10;
+            this.btnArea.Text=rect.Area.ToString();
         }
 
         private void Btn_Click(object sender, EventArgs e)
         {
-            line.X = 0; line.X1 = 10;
-            line.Y = 0; line.Y1 = 0;
-            this.Text = line.ToString()+"Length="+ line.Length();
+           // line.X0 = 0; line.X1 = 10;
+           // line.Y0 = 0; line.Y1 = 0;
+            this.Text = line.ToString()+"Length="+ line.Length;
         }
     }
 
