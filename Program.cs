@@ -5,6 +5,11 @@ namespace ConsoleApp1
 {
     class ClsForm : Form
     {
+        Button btn = new Button();
+        public ClsForm()
+        {
+            this.Controls.Add(btn);
+        }
 
     }
 
