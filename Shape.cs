@@ -6,20 +6,43 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public class Shape
+    public abstract class Shape 
     {
-        
-        public int X { get; set; }
-        public int Y { get; set; }
-      
-        public virtual double Area()
+        private string name;
+        public int X0 { get; set; }
+        public int Y0 { get; set; }
+        public Shape(string s)
         {
-            return 0;
+            Id = s;
         }
+
+        public string Id
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+            }
+        }
+        public abstract double Area
+        {
+            get;
+        }
+        public abstract double Length
+        {
+            get;
+        }
+       
 
         public override string ToString()
         {
-            return "X="+X.ToString()+";Y="+Y.ToString();
+            return Id + " Area = " + string.Format("{0:F2}", Area);
         }
+
+    
     }
 }
