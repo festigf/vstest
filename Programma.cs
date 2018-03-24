@@ -11,6 +11,7 @@ namespace ConsoleApp1
 
         static void Msg() { }
      
+        static void Test() { }
      
     }
 }
