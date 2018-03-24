@@ -9,7 +9,7 @@ namespace ConsoleApp1
     static class Programma
     {
 
-        static void msg() { };
+        static void msg() { }
      
      
     }
