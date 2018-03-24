@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
 
         static void Msg() { }
-     
+        static string Hello() { return "ciao"; }
      
     }
 }
